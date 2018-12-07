@@ -1,0 +1,27 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="">
+            <result>My Blog - us-123my-life.simplesite.com.jsp</result>
+        </action>
+        <action name="try">
+            <result>My Blog - us-123my-life.simplesite.com.jsp</result>
+        </action>
+        <action name="" class="binh.blog.BlogAction">
+            <result name="success">My Blog - us-123my-life.simplesite.com.jsp</result>
+        </action>
+        <action name="AboutMe" class="binh.aboume.AboutMeAction">
+            <result name="success">About Me - us-123my-life.simplesite.com.jsp</result>
+        </action>
+        <action name="Overview" class="binh.overview.OverviewAction">
+            <result name="success">Overview.jsp</result>
+        </action>
+        <action name="detail" class="binh.detail.DetalAction">
+            <result name="success">Detail.jsp</result>
+        </action>
+    </package>
+</struts>
